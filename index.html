@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartFarm AI Monitor</title>
+  <link rel="icon" type="image/svg+xml" href="/Smart-Form-Front-end/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/Smart-Form-Front-end/assets/index-D5vHCdCI.js"></script>
+  <link rel="stylesheet" crossorigin href="/Smart-Form-Front-end/assets/index-4G8iVuva.css">
+</head>
+
+<body>
+  <script>
+    window.onerror = function (msg, url, line, col, error) {
+      var div = document.createElement('div');
+      div.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); color:red; padding:20px; z-index:9999; overflow:auto; font-family:monospace;';
+      div.innerHTML = '<h1>Global Runtime Error</h1><h3>' + msg + '</h3><pre>' + (error ? error.stack : '') + '</pre>';
+      document.body.appendChild(div);
+    };
+  </script>
+  <div id="root"></div>
+</body>
+
+</html>
