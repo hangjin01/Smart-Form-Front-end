@@ -8,6 +8,7 @@ import SensorCard from '../ui/SensorCard';
 import SensorGraphCard from '../ui/SensorGraphCard';
 import CropInput from '../ui/CropInput';
 import ControlSwitch from '../ui/ControlSwitch';
+import WeatherCard from '../ui/WeatherCard';
 import { WELFARE_NEWS } from '../../constants';
 import { SensorData, Crop, ControlState } from '../../types';
 
@@ -342,6 +343,12 @@ const MainDashboard = ({
                             <div className="w-1 h-5 bg-green-500 rounded-full"></div>
                             환경 제어 (원격)
                         </h3>
+
+                        {/* Weather Widget */}
+                        <div className="mb-4">
+                            <WeatherCard />
+                        </div>
+
                         <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
                             <ControlSwitch
                                 label="스마트 관수"
